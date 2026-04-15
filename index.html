@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Government Service Assistance Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="app-shell">
+
+  <section class="hero">
+    <p class="eyebrow">Citizen Support</p>
+    <h1>Government Service Assistance Chatbot</h1>
+    <p class="hero-copy">
+      Get step-by-step help for document applications, tax information,
+      eligibility checks, and service status updates.
+    </p>
+  </section>
+
+  <section class="chat-card">
+    <div class="chat-header">
+      <div>
+        <h2>GovAssist Bot</h2>
+        <p>Answers common public service questions instantly</p>
+      </div>
+      <span class="status-pill">Online</span>
+    </div>
+
+    <div id="quick-actions" class="quick-actions">
+      <button class="quick-btn" data-prompt="How do I apply for a document?">Document Help</button>
+      <button class="quick-btn" data-prompt="I need tax information">Tax Info</button>
+      <button class="quick-btn" data-prompt="Check eligibility requirements">Eligibility</button>
+      <button class="quick-btn" data-prompt="How can I track my application status?">Track Status</button>
+    </div>
+
+    <div id="chat-log" class="chat-log"></div>
+
+    <form id="chat-form" class="chat-form">
+      <input
+        id="user-input"
+        type="text"
+        placeholder="Ask about documents, tax, eligibility, or status..."
+        required
+      >
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
