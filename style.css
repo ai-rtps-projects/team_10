@@ -1,0 +1,105 @@
+:root {
+  --bg: #f5efe4;
+  --bg-accent: #eadfc8;
+  --card: rgba(255, 251, 245, 0.92);
+  --ink: #1f2a1f;
+  --muted: #5e675c;
+  --primary: #0f5c4d;
+  --primary-soft: #d7efe4;
+  --secondary: #a66a2c;
+  --border: rgba(15, 92, 77, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: linear-gradient(135deg, var(--bg), var(--bg-accent));
+  color: var(--ink);
+}
+
+.app-shell {
+  width: min(1120px, 100%);
+  margin: auto;
+  padding: 40px;
+}
+
+.hero {
+  margin-bottom: 20px;
+}
+
+.chat-card {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--card);
+  overflow: hidden;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.status-pill {
+  background: var(--primary-soft);
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.quick-actions {
+  padding: 10px;
+}
+
+.quick-btn {
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.chat-log {
+  height: 400px;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+
+.message.user {
+  align-self: flex-end;
+  background: var(--primary);
+  color: white;
+}
+
+.message.bot {
+  align-self: flex-start;
+  background: white;
+}
+
+.chat-form {
+  display: flex;
+  padding: 10px;
+}
+
+.chat-form input {
+  flex: 1;
+  padding: 10px;
+}
+
+.chat-form button {
+  padding: 10px;
+  background: var(--secondary);
+  color: white;
+  border: none;
+}
